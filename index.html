@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotty Exam</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/body.css">    
+    <link rel="stylesheet" href="styles/nav.css">  
+    <link rel="stylesheet" href="styles/text.css">   
+    <link rel="stylesheet" href="styles/header.css">    
+    <link rel="stylesheet" href="styles/section.css"> 
+    <link rel="stylesheet" href="styles/sidenav.css"> 
+    <link rel="stylesheet" href="styles/animations.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <nav>
+        <div class="menus">
+            <ul>
+                <li id="header" class="move-top btn-secondary material-icons active" title="Header">
+                    play_arrow
+                </li>
+                <li class="divider"></li>
+                <li id="background-and-challenge" class="move-top" title="Background & Challenge">
+                    Background & Challenge 
+                </li>
+                <li class="divider"></li>  
+                <li id="solution"  class="move-top"title="Solution">
+                    Solution   
+                </li>
+                <li class="divider"></li>  
+                <li id="slideshow" class="move-top" title="slideshow">
+                    Slideshow
+                </li>          
+            </ul>
+            <button class="icon btn-secondary move-top"> 
+                <span class="material-icons">file_download</span>
+                <span class="label">Download Board</span> 
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        
+        <span class="sidenav">
+            <div id="header-dot" class="move-right active"></div>
+            <div id="background-and-challenge-dot"  class="move-right"></div>
+            <div id="solution-dot"  class="move-right"></div>
+            <div id="slideshow-dot"  class="move-right"></div>  
+        </span>
+    
+          
+     
+            <iframe id="video" src="https://player.vimeo.com/video/75847957?h=eb8544ea5?&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&#t=1s" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+            </iframe>
+     
+         
+            <span class="close-button material-icons">close</span>
+            <div class="opacity-none play-button-container">
+                <span class="play-button material-icons">play_arrow</span>
+            </div>
+          
+            
+     
+           
+          
+        <section id="header-section">
+            <img class="background" src="./images/background.png" alt="boat">
+            <img class="mesh-filter" src="./images/mesh.png" alt="...">
+        </section>
+        <div class="gradient-background"></div>
+
+
+        <section id="background-and-challenge-section">
+            <div class="inner cols-2">
+
+                <img class="opacity-none logo" src="./images/whitslogo.png" alt="">
+           
+                <div class="inner-group">
+                    <div class="text fade-right">
+                        <h1>Background  & Audience</h1>
+                        <p>Tourism & Events Queensland wanted to increase consideration of The Whitsundays amongst ‘social fun seekers’; digitally savvy consumers that socialise substantially online. </p>
+                    </div>
+                    <div class="text fade-right">
+                        <h1>Problem</h1>
+                        <p>The Whitsundays was losing its cachet as an aspirational holiday location.</p>
+                    </div>
+                    <div class="text fade-right">
+                        <h1>Objective</h1>
+                        <p>Shift perceptions and re-build the Whitsundays’ social currency as a world-class destination. </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="solution-section">
+            <div class="inner-flex">
+                <h1 class="opacity-none text-title">Solution</h1>
+
+                <div class="inner-group cols-2">
+                    <div class="text">
+                        <p>We knew movies rated high on the list of our target’s interests and, with incredible beaches, seaplanes, yachts and glamorous locations, the Whitsundays is the perfect setting for a movie.</p>
+                        <p>So we invited Australians to write it:</p>
+                        <h2>The Whitsundays <br> A movie that's waiting to be writen.</h2>
+                        <p>We enlisted world-renowned screenwriter Craig Pearce as Script Supervisor. Then for 20 days we posted a daily storyboard image on Facebook and Instagram, inviting the public to write scenes for a chance to win a $10,000 luxury holiday.</p>
+                    </div>
+                    <div class="text">
+                        <p>The campaign launched with a trailer, radio and online advertising.</p>
+                        <p>We reacted to the storyline as it developed, selecting and treating images according to the previous winning scene.</p>
+                        <p>Each scene written and shared became a compelling “ad” for the Whitsundays.</p>
+                        <p>Together, a Hollywood screenwriter and the Australian public had created the world’s first crowd-sourced movie storyboard and a story universe with millions of possible permutations.</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+
+        <section id="slideshow-section">
+            <div class="inner-flex">
+                <div class="nav-bottom">
+                    <ul>
+                        <li id="video" class="active">Video</li>
+                        <li id="photo">Photography</li>
+                        <li id="social">Social</li>
+                        <li id="pr">PR</li>
+                        <li id="radio">Radio</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="inner-group cols-2">
+                    <div class="fade-bottom img-container">
+                        <img id="img-bottom" src="./images/video.png" alt="img">
+                    </div>
+                    <div class="fade-right slide-text">
+                        <div class="text">
+                            <p id="text-bottom">A 60 second promotional movie trailer played on TV, online as pre rolls and via Facebook, to promote the movie that was waiting to be written to our movie-loving target audience, and encourage them to enter.</p>
+                            <div class="fade-in bottom-button-container">
+                                <button class="btn-primary">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>    
+</body>
+</html>

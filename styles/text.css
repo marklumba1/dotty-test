@@ -1,0 +1,18 @@
+
+.inner-group .text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text h1, .inner-flex .text-title{
+    font-size:  clamp(3rem, 3.5vw, 12rem);
+ }
+
+.text p, .nav-bottom ul li, .btn-primary {
+    font-size:  clamp(1rem, 1.2vw, 3rem);
+ }
+
+ .text h2{
+    font-size:  clamp(1rem, 1.5vw, 5rem);
+ }
+

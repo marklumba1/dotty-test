@@ -1,0 +1,60 @@
+@keyframes fade-in-opacity {
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes translate-original {
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-translate {
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+
+.opacity-none{
+    opacity: 0;
+}
+
+.move-right{
+    transform: translateX(30px);
+}
+.move-top{
+    transform: translateY(-60px);
+}
+
+.fade-right{
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+.fade-bottom{
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+
+.fade-in{
+    animation: fade-in-opacity 1s  linear forwards;
+}
+.fade-in-translate{
+    animation: fade-in-translate 1s linear forwards;
+}
+
+
+.enter-right{
+    animation: translate-original 200ms 1s linear forwards;
+}
+.enter-top{
+    animation: translate-original 200ms 1s linear forwards;
+}
+
+
